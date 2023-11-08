@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <!---- NAVBAR ----->
+    <!---- MAIN NAVBAR ----->
     <nav>
       <div class="container nav--container">
         <!----- Nav Container 1------>
@@ -62,35 +62,55 @@
         </div>
         <!----- Nav Container ----->
         <div class="nav--container2">
-            <div class="nav--details--info">
-                <!---- 1 ---->
-                <article class="nav--detail">
-                    <h4>For Patients and Visitors</h4>
-                    <i class="uil uil-angle-down"></i>
-                    <div class="detail-card">
-
-                    </div>
-                </article>
-                <!---- 2 ---->
-                <article class="nav--detail">
-                    <h4>For Health Care Professionals</h4>
-                    <i class="uil uil-angle-down"></i>
-                    <div class="detail-card">
-                        
-                    </div>
-                </article>
-                <!---- 3 ---->
-                <article class="nav--detail">
-                    <h4>Research</h4>
-                    <i class="uil uil-angle-down"></i>
-                    <div class="detail-card">
-                        
-                    </div>
-                </article>
-            </div>
-            <h3>020-6178-768</h3>
+          <div class="nav--details--info">
+            <!---- 1 ---->
+            <article class="nav--detail">
+              <h4 class="nav--filter" data-id="patients">
+                For Patients and Visitors
+                <i class="uil uil-angle-down"></i>
+              </h4>
+            </article>
+            <!---- 2 ---->
+            <article class="nav--detail">
+              <h4 class="nav--filter" data-id="health--care">
+                For Health Care Professionals <i class="uil uil-angle-down"></i>
+              </h4>
+            </article>
+            <!---- 3 ---->
+            <article class="nav--detail">
+              <h4 class="nav--filter" data-id="research">
+                Research <i class="uil uil-angle-down"></i>
+              </h4>
+            </article>
+          </div>
+          <h3 class="nav--phone">020-6178-768</h3>
         </div>
       </div>
     </nav>
+    <!---------- NAV - DETAILS ---------->
+    <div class="container nav--details--container">
+      <article id="patients" class="detail-card ">
+        <p class="show--nav--details">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+          consectetur est obcaecati deserunt iure veritatis nam sit optio et
+          quam!
+        </p>
+      </article>
+      <article id="health--care" class="detail-card">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+          aut eos cupiditate tempora fuga blanditiis, aliquid facere molestiae
+          deserunt veniam!
+        </p>
+      </article>
+      <article id="research" class="detail-card">
+        <p>
+          Lorem ipsum dolor sit amet consectetu adipisicing elit. Magni
+          accusantium animi illum officiis placeat eveniet at minus quasi iusto
+          sit.
+        </p>
+      </article>
+    </div>
+    <script src="./main.js"></script>
   </body>
 </html>
