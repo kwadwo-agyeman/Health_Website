@@ -16,15 +16,20 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto+Slab:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <!---- My Swipper ----->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <!---- MAIN NAVBAR ----->
-    <nav>
-      <div class="container nav--container">
+    <nav class="nav">
+      <div class="nav--container">
         <!----- Nav Container 1------>
-        <div class="nav--container1">
+        <div class="container nav--container1">
           <!--- LOGO ---->
           <div class="nav--logo">
             <div class="logo">
@@ -61,11 +66,11 @@
           </div>
         </div>
         <!----- Nav Container ----->
-        <div class="nav--container2">
+        <div class="container nav--container2">
           <div class="nav--details--info">
             <!---- 1 ---->
             <article class="nav--detail">
-              <div class="nav--filter active" data-id="patients">
+              <div class="nav--filter" data-id="patients">
                 <h5>
                   For Patients and Visitors <i class="uil uil-angle-down"></i>
                 </h5>
@@ -93,31 +98,201 @@
           <h3 class="nav--phone">020-6178-768</h3>
         </div>
       </div>
+      <!---------- NAV - DETAILS ---------->
+      <div class="container nav--details--container">
+        <article id="patients" class="detail-card">
+          <span class="close--nav--details"><i class="uil uil-times"></i></span>
+          <div class="container detail-card-container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+            consectetur est obcaecati deserunt iure veritatis nam sit optio et
+            quam! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Quae, cumque atque error rem animi ratione eveniet delectus.
+          </div>
+        </article>
+        <article id="health--care" class="detail-card">
+          <span class="close--nav--details"><i class="uil uil-times"></i></span>
+          <div class="container detail-card-container">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+            aut eos cupiditate tempora fuga blanditiis, aliquid facere molestiae
+            deserunt veniam!
+          </div>
+        </article>
+        <article id="research" class="detail-card">
+          <span class="close--nav--details"><i class="uil uil-times"></i></span>
+          <div class="container detail-card-container">
+            Lorem ipsum dolor sit amet consectetu adipisicing elit. Magni
+            accusantium animi illum officiis placeat eveniet at minus quasi
+            iusto sit.
+          </div>
+        </article>
+      </div>
     </nav>
-    <!---------- NAV - DETAILS ---------->
-    <div class="container nav--details--container">
-      <article id="patients" class="detail-card ">
-        <p class="">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-          consectetur est obcaecati deserunt iure veritatis nam sit optio et
-          quam!
-        </p>
-      </article>
-      <article id="health--care" class="detail-card">
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
-          aut eos cupiditate tempora fuga blanditiis, aliquid facere molestiae
-          deserunt veniam!
-        </p>
-      </article>
-      <article id="research" class="detail-card">
-        <p>
-          Lorem ipsum dolor sit amet consectetu adipisicing elit. Magni
-          accusantium animi illum officiis placeat eveniet at minus quasi iusto
-          sit.
-        </p>
-      </article>
-    </div>
+
+    <!--------- HEADER --------->
+    <header>
+      <div class="container header--container">
+        <div class="header--image">
+          <img src="./images/header-image2.jpg" alt="" />
+        </div>
+        <!--- Header Details eg. make appointment ---->
+        <div class="header--details">
+          <article class="header--detail">
+            <a href="#"><span>Find A Doctor</span></a>
+          </article>
+          <article class="header--detail">
+            <a href="#"><span>Make An Appointment</span></a>
+          </article>
+          <article class="header--detail">
+            <a href="#"><span>Find A Location</span></a>
+          </article>
+          <article class="header--detail">
+            <a href="#"><span>Pay My Bill</span></a>
+          </article>
+        </div>
+      </div>
+    </header>
+
+    <!------- SOME BLOGS -------->
+    <section class="container blog--container swiper mySwiper">
+      <div class="blogs swiper-wrapper">
+        <!-------->
+        <article class="blog swiper-slide">
+          <div class="blog--image">
+            <img src="./images/blog1.jpg" alt="" />
+          </div>
+          <div class="blog--details">
+            <h3>The Impact of Regular Exercise on Mental Well-being</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+              ratione maiores excepturi sed.
+            </p>
+            <a href="#">Read More <i class="uil uil-angle-right-b"></i></a>
+          </div>
+        </article>
+        <!---------->
+        <article class="blog swiper-slide">
+          <div class="blog--image">
+            <img src="./images/blog2.jpg" alt="" />
+          </div>
+          <div class="blog--details">
+            <h3>
+              Understanding the Benefits of a Balanced Diet for a Healthier You
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+              ratione maiores excepturi sed. Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit.
+            </p>
+            <a href="#">Read More <i class="uil uil-angle-right-b"></i></a>
+          </div>
+        </article>
+        <!------------>
+        <article class="blog swiper-slide">
+          <div class="blog--image">
+            <img src="./images/blog3.jpg" alt="" />
+          </div>
+          <div class="blog--details">
+            <h3>Exploring Holistic Approaches to Stress Management</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+              ratione maiores excepturi sed. Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Nulla ipsa perspiciatis quidem
+              veniam sunt.
+            </p>
+            <a>Read More <i class="uil uil-angle-right-b"></i></a>
+          </div>
+        </article>
+        <!----------->
+        <article class="blog swiper-slide">
+          <div class="blog--image">
+            <img src="./images/blog4.jpg" alt="" />
+          </div>
+          <div class="blog--details">
+            <h3>
+              Unveiling the Importance of Quality Sleep in Your Health Journey
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+              ratione maiores excepturi sed. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit.
+            </p>
+            <a href="#">Read More <i class="uil uil-angle-right-b"></i></a>
+          </div>
+        </article>
+        <!---------->
+        <article class="blog swiper-slide">
+          <div class="blog--image">
+            <img src="./images/blog5.jpg" alt="" />
+          </div>
+          <div class="blog--details">
+            <h3>
+              Navigating the World of Superfoods: A Guide to Nutrient-Rich
+              Choices
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+              ratione maiores excepturi sed. Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Laudantium, facilis? Mollitia, non!
+            </p>
+            <a href="#">Read More <i class="uil uil-angle-right-b"></i></a>
+          </div>
+        </article>
+        <!-------->
+        <article class="blog swiper-slide">
+          <div class="blog--image">
+            <img src="./images/blog6.jpg" alt="" />
+          </div>
+          <div class="blog--details">
+            <h3>
+              Mindful Practices: Enhancing Emotional Health through Meditation
+              and Mindfulness
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+              ratione maiores excepturi sed. Lorem ipsum dolor sit amet.
+            </p>
+            <a href="#">Read More <i class="uil uil-angle-right-b"></i></a>
+          </div>
+        </article>
+        <!------------>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!--------- RESEARCH SLIDE -------->
+    <section>
+      <div class="container research--container">
+        <div class="research--left">
+          <img src="./images/research-slide.jpg" alt="" />
+        </div>
+        <div class="research--right">
+          <div class="research--details">
+            <h3>
+              What impact does the widespread adoption of telemedicine have on
+              patient satisfaction and healthcare accessibility?
+            </h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
+              libero blanditiis officiis vero ratione maiores assumenda, eaque
+              animi non sunt, itaque culpa nemo at reprehenderit harum eius
+              Perspiciatis voluptatum voluptatibus minus fugit?
+            </p>
+            <a href="#"><h4>Read More</h4></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
     <script src="./main.js"></script>
   </body>
 </html>

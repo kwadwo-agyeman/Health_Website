@@ -7,3 +7,7 @@ shades of blue
 ----tertiary-background-#89CFF0
 # Swipe
 swiper JS to swipe blogs on landing page
+# z-indexes
+---45--nav
+---90--nav--container
+---24--research--right
