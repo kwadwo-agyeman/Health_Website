@@ -33,18 +33,24 @@ closeNavDetails.forEach((closeNavDetail) => {
     navFilters.forEach((navFilter) => {
       navFilter.classList.remove("active");
     });
-    // navDetailCards.forEach((navDetailCard) => {
-    // navDetailCard.style.transform = "translateY(-500px)"
-    //});
     navDetailsContainer.style.transform = "translateY(-100%)";
   });
 });
-//change nav appearance when you scroll past 0
-/*const nav = document.querySelector(".nav");
-window.addEventListener('scroll',()=>{
-  if(window.scrollY > 0){
-    nav.style.background = "rgb(0, 128, 255,0.6)"
-  }else{
-    nav.style.background = "#007fff"
-  }
-})*/
+/// JS for tablet media queries
+const navMenu = document.querySelector(".nav--menu");
+const menuBar = document.getElementById("menu--bar");
+const closeMenu = document.getElementById("close--menu");
+const toggleContainer = document.querySelector(".toggle--nav");
+
+menuBar.addEventListener("click", () => {
+  toggleContainer.style.background = "#007fff";
+  navMenu.style.transform = "translateX(0)";
+  menuBar.style.display = "none";
+  closeMenu.style.display = "block";
+});
+closeMenu.addEventListener("click", () => {
+  toggleContainer.style.background = "transparent";
+  navMenu.style.transform = "translateX(100%)";
+  menuBar.style.display = "block";
+  closeMenu.style.display = "none";
+});
