@@ -19,7 +19,7 @@
   --color-dark-light: rgba(225, 225, 225, 0.091);
   --color-light: rgba(225, 225, 225);
   /***** width *****/
-  --container-width-lg: 76%;
+  --container-width-lg: 80%;
   --container-width-md: 90%;
   --container-width-sm: 94%;
   /***** Transition *****/
@@ -215,7 +215,7 @@ nav {
 .close--nav--details:hover {
   cursor: pointer;
 }
-.nav--search--icon{
+.nav--search--icon {
   display: none;
 }
 /********** Header Details ************/
@@ -696,75 +696,74 @@ h3 {
     top: 5rem;
   }
   .search {
-    display:none;
+    display: none;
     transition: all 400ms ease-in-out;
   }
-  .nav--search--icon{
+  .nav--search--icon {
     display: block;
     position: absolute;
-    background: linear-gradient(135deg,aqua,var(--color-primary));
+    background: linear-gradient(135deg, aqua, var(--color-primary));
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
     right: 20%;
     bottom: 18px;
   }
-  .display--search--bar{
+  .display--search--bar {
     display: block;
   }
-  .nav--search--icon i.uil{
+  .nav--search--icon i.uil {
     margin-left: 0.7rem;
     top: 2rem;
     font-size: 1.6rem;
-    color: var(--color-white)
+    color: var(--color-white);
   }
   .nav--input {
     width: 20rem;
   }
-  .nav--logo{
+  .nav--logo {
     height: 4rem;
     margin-top: 1.5rem;
     width: 70vw;
   }
-  .logo a img{
+  .logo a img {
     width: 6rem;
     margin-left: 2.5rem;
   }
-  .logo--text{
+  .logo--text {
     font-size: 1rem;
   }
-  .search{
+  .search {
     top: 6rem;
   }
   /******** HEADER ********/
-  header{
+  header {
     width: 100vw;
     height: 100vh;
   }
-  .header--image{
+  .header--image {
     top: -3rem;
     width: 100vw;
   }
-  .header--details{
+  .header--details {
     grid-template-columns: 1fr;
     width: 90vw;
     left: 3%;
     top: 78rem;
-
   }
-  .header--detail{
+  .header--detail {
     width: 80vw;
-    margin-left:-1.5rem;
+    margin-left: -1.5rem;
   }
   /******** SOME BLOGS ********/
-  .blog--container{
+  .blog--container {
     margin: 8rem auto 0;
   }
   /*********** RESEARCH SLIDE ***********/
-  .research{
+  .research {
     height: 100vh;
   }
-  .research--container{
+  .research--container {
     width: 76vw;
     grid-template-columns: 1fr;
     height: 30vh;
@@ -777,53 +776,158 @@ h3 {
       var(--color-primary),
       aqua
     );
-    margin: 5rem 5rem 0;
-
+    margin: -8rem 5rem 0;
   }
-  .research--left{
+  .research--left {
     width: 70vw;
     margin-left: 14px;
   }
-  .research--right{
+  .research--right {
     margin-top: 15rem;
     width: 100%;
     left: 7.8rem;
   }
 
   /******** FOOTER *********/
-  .footer{
+  .footer {
     width: 100vw;
   }
-  .footer1{
+  .footer1 {
     flex-direction: column;
     position: relative;
     right: 20%;
     text-align: center;
     padding: 5px;
   }
-  .footer__logo{
+  .footer__logo {
     margin: 0 auto;
   }
-  .footer__2{
+  .footer__2 {
     position: relative;
     right: 20%;
     text-align: center;
     padding: 5px;
   }
-  .footer__3{
+  .footer__3 {
     position: relative;
     right: 20%;
     text-align: center;
     padding: 5px;
   }
-  .footer__4{
+  .footer__4 {
     position: relative;
     right: 20%;
     text-align: center;
     padding: 5px;
   }
-  .footer__container{
+  .footer__container {
     grid-template-columns: 1fr;
     margin: 0 auto;
+  }
+}
+/* =========================================== ABOUT PAGE ========================================= */
+.about--container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 3rem;
+  margin-top: 15rem;
+}
+/*********** ABOUT RIGHT-SIDE **************/
+.about--right {
+  background: ;
+}
+.about--right h2 {
+  text-align: left;
+  color: var(--color-white);
+  background:linear-gradient(145deg, var(--color-primary), aqua);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  
+}
+.about--detail h3 {
+  margin-top: 2rem;
+  font-weight: 500;
+  color: var(--color-light-black);
+}
+.about--detail p {
+  margin-top: 0.5rem;
+}
+.about--detail--1 {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.about--detail--4 p a {
+  display: block;
+}
+.in--this--section--container {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 0 1rem;
+}
+.in--this--section--container a {
+  color: var(--color-light-black);
+}
+
+.in--this--section--container a:hover {
+  text-decoration: underline var(--color-primary);
+}
+/*********** ABOUT LEFT-SIDE **************/
+.about--sidebar h3 {
+  margin-top: 1rem;
+  background: var(--color-primary);
+  padding: 0.5rem;
+  color: white;
+  width: 100%;
+}
+.about--left {
+  background: linear-gradient(145deg, var(--color-primary), aqua);
+  box-shadow: -4rem 4rem 10rem rgb(0, 0, 0, 0.3);
+  padding: 0 30px;
+  height: 100vh;
+}
+.about--menu {
+  margin-top: 1rem;
+}
+.about--menu li {
+  height: 5rem;
+  border-bottom: 1px solid var(--color-white);
+}
+.about--left li a {
+  text-align: center;
+  font-weight: 600;
+  padding: 0 1rem;
+  transition: var(--transition);
+}
+.about--left li a:hover {
+  font-weight: 700;
+}
+/*************** TABLETS ABOUT PAGE*****************/
+@media screen and (max-width: 1024px){
+  .container{
+    width: var(--container-width-md);
+  }
+  .about--container{
+    grid-template-columns: 25% 70%;
+  }
+}
+/*************** MOBILE PHONES ABOUT PAGE**************/
+@media screen and (max-width: 600px){
+  .container{
+    width: var(--container-width-sm);
+  }
+  .about--container{
+    grid-template-columns: 1fr;
+  }
+  .about--left{
+    margin-top: -8rem;
+    height: fit-content;
+    box-shadow: none;
+  }
+  .in--this--section--container{
+    grid-template-columns: 1fr;
   }
 }
