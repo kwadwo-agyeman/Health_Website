@@ -54,3 +54,11 @@ closeMenu.addEventListener("click", () => {
   menuBar.style.display = "block";
   closeMenu.style.display = "none";
 });
+// toggle the appearance of search abr on small screens
+
+const searchBar = document.querySelector(".search");
+const navSearch = document.querySelector(".nav--search--icon");
+
+navSearch.addEventListener('click',()=>{
+  searchBar.classList.toggle("display--search--bar")
+})
