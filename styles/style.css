@@ -687,7 +687,7 @@ h3 {
   /************ NAVBAR **************/
   .nav {
     height: 5rem;
-    width: 100%;
+    width: 100vw;
   }
   .nav--container {
     height: 5rem;
@@ -722,45 +722,52 @@ h3 {
     width: 20rem;
   }
   .nav--logo{
-    width: 100vw;
     height: 4rem;
     margin-top: 1.5rem;
+    width: 70vw;
+  }
+  .logo a img{
+    width: 6rem;
+    margin-left: 2.5rem;
+  }
+  .logo--text{
+    font-size: 1rem;
   }
   .search{
     top: 6rem;
   }
   /******** HEADER ********/
   header{
-    width: 600px;
+    width: 100vw;
     height: 100vh;
   }
   .header--image{
     top: -3rem;
-    width: 100%;
+    width: 100vw;
   }
   .header--details{
     grid-template-columns: 1fr;
-    width: 100%;
+    width: 90vw;
     left: 3%;
-    top: 83rem;
-    background: transparent;
+    top: 78rem;
 
   }
   .header--detail{
     width: 80vw;
+    margin-left:-1.5rem;
   }
   /******** SOME BLOGS ********/
   .blog--container{
-    margin: 30rem auto 0;
+    margin: 8rem auto 0;
   }
   /*********** RESEARCH SLIDE ***********/
   .research{
-    height: 110vh;
+    height: 100vh;
   }
   .research--container{
     width: 76vw;
     grid-template-columns: 1fr;
-    height: 50vh;
+    height: 30vh;
     padding: 2rem 0;
     left: -6%;
     position: relative;
@@ -770,21 +777,53 @@ h3 {
       var(--color-primary),
       aqua
     );
+    margin: 5rem 5rem 0;
+
   }
   .research--left{
-    width: 60vw;
+    width: 70vw;
+    margin-left: 14px;
   }
   .research--right{
-    margin-top: 13rem;
+    margin-top: 15rem;
     width: 100%;
     left: 7.8rem;
   }
 
   /******** FOOTER *********/
   .footer{
-    width: 100%;
+    width: 100vw;
+  }
+  .footer1{
+    flex-direction: column;
+    position: relative;
+    right: 20%;
+    text-align: center;
+    padding: 5px;
+  }
+  .footer__logo{
+    margin: 0 auto;
+  }
+  .footer__2{
+    position: relative;
+    right: 20%;
+    text-align: center;
+    padding: 5px;
+  }
+  .footer__3{
+    position: relative;
+    right: 20%;
+    text-align: center;
+    padding: 5px;
+  }
+  .footer__4{
+    position: relative;
+    right: 20%;
+    text-align: center;
+    padding: 5px;
   }
   .footer__container{
     grid-template-columns: 1fr;
+    margin: 0 auto;
   }
 }
