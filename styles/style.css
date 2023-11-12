@@ -719,7 +719,7 @@ h3 {
     color: var(--color-white);
   }
   .nav--input {
-    width: 20rem;
+    width: 15rem;
   }
   .nav--logo {
     height: 4rem;
@@ -749,7 +749,7 @@ h3 {
     grid-template-columns: 1fr;
     width: 90vw;
     left: 3%;
-    top: 78rem;
+    top: 75rem;
   }
   .header--detail {
     width: 80vw;
@@ -757,74 +757,113 @@ h3 {
   }
   /******** SOME BLOGS ********/
   .blog--container {
-    margin: 8rem auto 0;
+    margin: 20rem auto 0;
   }
   /*********** RESEARCH SLIDE ***********/
+  /* Reset properties for .research--container */
   .research {
-    height: 100vh;
+    background: linear-gradient(
+      145deg,
+      var(--color-primary),
+      aqua,
+      var(--color-bg1)
+    );
+    margin-top: -1rem;
+    height: fit-content;
+    padding-bottom: -3rem;
   }
   .research--container {
-    width: 76vw;
+    background: red;
+    display: initial;
+    margin-top: -10rem;
     grid-template-columns: 1fr;
-    height: 30vh;
-    padding: 2rem 0;
-    left: -6%;
-    position: relative;
-    background: linear-gradient(
-      325deg,
-      var(--color-bg1),
-      var(--color-primary),
-      aqua
-    );
-    margin: -8rem 5rem 0;
+    width: 90%;
+    gap: 2rem;
   }
-  .research--left {
-    width: 70vw;
-    margin-left: 14px;
-  }
-  .research--right {
-    margin-top: 15rem;
-    width: 100%;
-    left: 7.8rem;
+  /* Reset properties for .research--left */
+  .research--left img {
+    box-shadow: black;
+    background-color: var(--color-primary);
+    margin-left: -1rem;
   }
 
-  /******** FOOTER *********/
-  .footer {
-    width: 100vw;
-  }
-  .footer1 {
-    flex-direction: column;
+  /* Reset properties for .research--right */
+  .research--right {
     position: relative;
-    right: 20%;
+    z-index: 0;
+    margin-left: -9rem;
+    margin-top: 15.5rem;
+    background: #007fff;
+    color: var(--color-white);
+    width: 80vw;
+    height: fit-content;
+    padding: 1.5rem;
+    box-shadow: none;
+  }
+
+  .research--right p,
+  h3 {
     text-align: center;
-    padding: 5px;
   }
-  .footer__logo {
-    margin: 0 auto;
+
+  .research--right p {
+    margin-top: 1rem;
   }
-  .footer__2 {
-    position: relative;
-    right: 20%;
+
+  .research--right a h4 {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    border: 2px solid var(--color-white);
+    width: 50%;
+    margin: 1rem auto 0;
     text-align: center;
-    padding: 5px;
+    transition: var(--transition);
   }
-  .footer__3 {
-    position: relative;
-    right: 20%;
-    text-align: center;
-    padding: 5px;
+  .research--right a h4:hover {
+    border: 2px solid var(--color-white);
+    background: transparent;
+    color: var(--color-white);
   }
-  .footer__4 {
-    position: relative;
-    right: 20%;
-    text-align: center;
-    padding: 5px;
-  }
-  .footer__container {
-    grid-template-columns: 1fr;
-    margin: 0 auto;
-  }
+
+
+/******** FOOTER *********/
+.footer {
+  width: 100vw;
 }
+.footer1 {
+  flex-direction: column;
+  position: relative;
+  right: 20%;
+  text-align: center;
+  padding: 5px;
+}
+.footer__logo {
+  margin: 0 auto;
+}
+.footer__2 {
+  position: relative;
+  right: 20%;
+  text-align: center;
+  padding: 5px;
+}
+.footer__3 {
+  position: relative;
+  right: 20%;
+  text-align: center;
+  padding: 5px;
+}
+.footer__4 {
+  position: relative;
+  right: 20%;
+  text-align: center;
+  padding: 5px;
+}
+.footer__container {
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+}
+}
+
 /* =========================================== ABOUT PAGE ========================================= */
 .about--container {
   display: grid;
@@ -833,16 +872,12 @@ h3 {
   margin-top: 15rem;
 }
 /*********** ABOUT RIGHT-SIDE **************/
-.about--right {
-  background: ;
-}
 .about--right h2 {
   text-align: left;
   color: var(--color-white);
-  background:linear-gradient(145deg, var(--color-primary), aqua);
+  background: linear-gradient(145deg, var(--color-primary), aqua);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  
 }
 .about--detail h3 {
   margin-top: 2rem;
@@ -906,28 +941,188 @@ h3 {
   font-weight: 700;
 }
 /*************** TABLETS ABOUT PAGE*****************/
-@media screen and (max-width: 1024px){
-  .container{
+@media screen and (max-width: 1024px) {
+  .container {
     width: var(--container-width-md);
   }
-  .about--container{
-    grid-template-columns: 25% 70%;
-  }
-}
-/*************** MOBILE PHONES ABOUT PAGE**************/
-@media screen and (max-width: 600px){
-  .container{
-    width: var(--container-width-sm);
-  }
-  .about--container{
+  .about--container {
     grid-template-columns: 1fr;
   }
   .about--left{
+    height: fit-content;
+  }
+  .about--detail{
+    text-align: center;
+  }
+  .about--image img{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+/*************** MOBILE PHONES ABOUT PAGE**************/
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+  .about--container {
+    grid-template-columns: 1fr;
+  }
+  .about--left {
     margin-top: -8rem;
     height: fit-content;
     box-shadow: none;
   }
-  .in--this--section--container{
+  .in--this--section--container {
     grid-template-columns: 1fr;
+  }
+}
+/* ============================================ HEALTH ============================================ */
+.health--container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 3rem;
+  margin-top: 15rem;
+}
+/*********** HEALTH LEFT-SIDE **************/
+.health--sidebar h3 {
+  margin-top: 1rem;
+  background: var(--color-primary);
+  padding: 0.5rem;
+  color: white;
+  width: 100%;
+}
+.health--left {
+  background: linear-gradient(145deg, var(--color-primary), aqua);
+  box-shadow: -4rem 4rem 10rem rgb(0, 0, 0, 0.3);
+  padding: 0 30px;
+  height: 100vh;
+}
+.health--menu {
+  margin-top: 1rem;
+}
+.health--menu li {
+  height: 5rem;
+  border-bottom: 1px solid var(--color-white);
+}
+.health--left li a {
+  text-align: center;
+  font-weight: 600;
+  padding: 0 1rem;
+  transition: var(--transition);
+}
+.health--left li a:hover {
+  font-weight: 700;
+}
+/***************** HEALTH RIGHT *****************/
+.health--right{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+.health--right p{
+  margin-top: -2rem;
+}
+.health--right h2{
+  color: var(--color-light-black);
+}
+.health--card{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 2rem;
+}
+.health--card .card--details p{
+  margin-top: 1rem;
+}
+.health--card .card--details a h4{
+color: var(--color-light-black);
+}
+.health--card .card--details a h4:hover{
+  color: var(--color-bg1);
+  }
+.card--image img{
+  border-radius: 5px;
+}
+
+/***************** TABLETS ****************/
+@media screen and (max-width: 1024px) and (orientation: landscape){
+  .container{
+    width: var(--container-width-md);
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  .health--container{
+    grid-template-columns: 1fr;
+  }
+  .health--left{
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1024px) and (orientation: portrait){
+  .container{
+    width: var(--container-width-md);
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  .health--container{
+    grid-template-columns: 1fr;
+    margin-left: 10rem;
+  }
+  .health--left{
+    height: fit-content;
+  }
+}
+
+/***************** PHONES ****************/
+@media screen and (max-width: 600px) {
+  .container{
+    width: var(--container-width-sm);
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2;
+  }
+  h4 {
+    font-size: 0.9rem;
+  }
+  .health--container{
+    margin-left: 1rem;
+    margin-top: -4rem;
+  }
+  .health--right p{
+    text-align: center;
+  }
+  .health--card{
+    grid-template-columns: 1fr;
+  }
+  .card--details{
+    text-align: center;
   }
 }
