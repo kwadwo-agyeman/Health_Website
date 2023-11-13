@@ -59,6 +59,28 @@ closeMenu.addEventListener("click", () => {
 const searchBar = document.querySelector(".search");
 const navSearch = document.querySelector(".nav--search--icon");
 
-navSearch.addEventListener('click',()=>{
-  searchBar.classList.toggle("display--search--bar")
-})
+navSearch.addEventListener("click", () => {
+  searchBar.classList.toggle("display--search--bar");
+});
+
+// location tabs.....
+const tabFilters = document.querySelectorAll(".tab--filter");
+const tabCards = document.querySelectorAll(".tabs--card");
+
+tabFilters.forEach((tabFilter) => {
+  tabFilter.addEventListener("click", (e) => {
+    const Id = e.currentTarget.dataset.id;
+
+    tabFilters.forEach((tabFilter) => {
+      tabFilter.classList.remove("active");
+    });
+    e.currentTarget.classList.add("active")
+
+    tabCards.forEach((tabCard)=>{
+      tabCard.classList.remove("active")
+    })
+
+    const ActiveLocationCard = document.getElementById(Id)
+    ActiveLocationCard.classList.add("active")
+  });
+});

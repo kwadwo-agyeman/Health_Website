@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health&Wellness</title>
+
+    <!--- ICONS---->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <!----- Montserrat----->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto+Slab:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!---- MAIN NAVBAR ----->
+    <nav class="nav">
+      <div class="nav--container">
+        <!----- Nav Container 1------>
+        <div class="container nav--container1">
+          <!--- LOGO ---->
+          <div class="nav--logo">
+            <div class="logo">
+              <a href="index.html"
+                ><img src="./images/health-logo.png" alt=""
+              /></a>
+            </div>
+            <a href="index.html"
+              ><h2 class="logo--text">Agyemang Hospital</h2></a
+            >
+          </div>
+          <!--- NAV LINKS AND SEARCH BAR --->
+          <div class="nav_links_search">
+            <div class="nav--links">
+              <ul class="nav--menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="health.html">Health</a></li>
+                <li><a href="location.html">Location</a></li>
+              </ul>
+              <div class="nav--search--icon">
+                <i class="uil uil-search"></i>
+              </div>
+              <div class="toggle--nav">
+                <button id="menu--bar"><i class="uil uil-bars"></i></button>
+                <button id="close--menu"><i class="uil uil-times"></i></button>
+              </div>
+            </div>
+            <div class="search">
+              <input
+                type="text"
+                placeholder="Research works"
+                class="nav--input"
+              />
+              <div class="search--logo">
+                <i class="uil uil-search"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!----- Nav Container ----->
+        <div class="container nav--container2">
+          <div class="nav--details--info">
+            <!---- 1 ---->
+            <article class="nav--detail">
+              <div class="nav--filter" data-id="patients">
+                <h5>
+                  For Patients and Visitors <i class="uil uil-angle-down"></i>
+                </h5>
+              </div>
+            </article>
+            <!---- 2 ---->
+            <article class="nav--detail">
+              <div class="nav--filter" data-id="health--care">
+                <h5>
+                  For Health Care Professionals
+                  <i class="uil uil-angle-down"></i>
+                </h5>
+              </div>
+            </article>
+            <!---- 3 ---->
+            <article class="nav--detail">
+              <div class="nav--filter" data-id="research">
+                <h5>
+                  Research
+                  <i class="uil uil-angle-down"></i>
+                </h5>
+              </div>
+            </article>
+          </div>
+          <h3 class="nav--phone">020-6178-768</h3>
+        </div>
+      </div>
+      <!---------- NAV - DETAILS ---------->
+      <div class="container nav--details--container">
+        <article id="patients" class="detail-card">
+          <span class="close--nav--details"><i class="uil uil-times"></i></span>
+          <div class="container detail-card-container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+            consectetur est obcaecati deserunt iure veritatis nam sit optio et
+            quam! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Quae, cumque atque error rem animi ratione eveniet delectus.
+          </div>
+        </article>
+        <article id="health--care" class="detail-card">
+          <span class="close--nav--details"><i class="uil uil-times"></i></span>
+          <div class="container detail-card-container">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+            aut eos cupiditate tempora fuga blanditiis, aliquid facere molestiae
+            deserunt veniam!
+          </div>
+        </article>
+        <article id="research" class="detail-card">
+          <span class="close--nav--details"><i class="uil uil-times"></i></span>
+          <div class="container detail-card-container">
+            Lorem ipsum dolor sit amet consectetu adipisicing elit. Magni
+            accusantium animi illum officiis placeat eveniet at minus quasi
+            iusto sit.
+          </div>
+        </article>
+      </div>
+    </nav>
+    <!---------- END OF NAVBAR ----------->
+    <!-------- LOCATIONS -------->
+    <section class="locations">
+      <div class="container location--container">
+        <div class="location--head">
+          <h2>Find An Agyemang Hospital Location</h2>
+          <div class="emergency">
+            <p>
+              If this an emergency call, 911 or find near by emergency rooms
+            </p>
+          </div>
+          <div class="location--input">
+            <div class="find">
+              <input type="text" placeholder="treatment,specialty or name" />
+            </div>
+            <div class="near--me">
+              <input
+                type="text"
+                placeholder="location near you"
+                class="near--me--input"
+              />
+              <div class="search--logo--near">
+                <i class="uil uil-search"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--------- LOCATION TABS ---------->
+        <div class="tabs--header">
+          <h2>Looking For A Facility ?</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Reprehenderit dolore alias dicta at modi nulla eligendi voluptates.
+            Itaque, quasi!
+          </p>
+        </div>
+        <div class="tabs--container">
+          <div class="tabs--filters">
+            <button class="tab--filter active" data-id="hospital">
+              Hospital
+            </button>
+            <button class="tab--filter" data-id="multi-specialty">
+              Multi Specialty
+            </button>
+            <button class="tab--filter" data-id="additional-services">
+              Additional Services
+            </button>
+          </div>
+          <div class="tabs--body">
+            <!-------- HOSPITAL -------->
+            <div class="tabs--hospital--body">
+              <article class="tabs--card active" id="hospital">
+                <h2>Hospital</h2>
+                <p class="above--h2--text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Rerum illum eum itaque unde, soluta autem.
+                </p>
+                <div class="google--maps">
+                  <iframe
+                    src="https://www.google.com.qa/maps/d/u/0/embed?mid=1RErZ0_BR9AMmYjJbApTYt4OJ0Mz4eVw&ehbc=2E312F"
+                    width="640"
+                    height="480"
+                  ></iframe>
+                </div>
+                <div class="hospital--card">
+                  <div class="hospital--card--left">
+                    <img src="./images/hospitalLoc1.jpg" alt="" />
+                  </div>
+                  <div class="hospital--card--right">
+                    <h3>Agyemang Hospital-Ellicot City</h3>
+                    <div class="address-info">
+                      <h4>Address:</h4>
+                      <p>2345 Ellicot City</p>
+                      <p>Maryland,MD 2349</p>
+                    </div>
+                    <div class="phone--location">
+                      <h4>Phone:</h4>
+                      <p>234-4567-344</p>
+                    </div>
+                    <div class="location--hospital--links">
+                      <a href="#">Directions and Parking</a>
+                      <a href="#">Getting Around The Hospital</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hospital--card">
+                  <div class="hospital--card--left">
+                    <img src="./images/hospitalLoc2.jpg" alt="" />
+                  </div>
+                  <div class="hospital--card--right">
+                    <h3>Agyemang Hospital-Baltimore City</h3>
+                    <div class="address-info">
+                      <h4>Address:</h4>
+                      <p>2345 Baltimore City</p>
+                      <p>Maryland,MD 2349</p>
+                    </div>
+                    <div class="phone--location">
+                      <h4>Phone:</h4>
+                      <p>234-4347-345</p>
+                    </div>
+                    <div class="location--hospital--links">
+                      <a href="#">Directions and Parking</a>
+                      <a href="#">Getting Around The Hospital</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hospital--card">
+                  <div class="hospital--card--left">
+                    <img src="./images/hospitalLoc3.jpg" alt="" />
+                  </div>
+                  <div class="hospital--card--right">
+                    <h3>Agyemang Hospital-Columbia</h3>
+                    <div class="address-info">
+                      <h4>Address:</h4>
+                      <p>2345 Columbia City</p>
+                      <p>Maryland,MD 2349</p>
+                    </div>
+                    <div class="phone--location">
+                      <h4>Phone:</h4>
+                      <p>234-4567-344</p>
+                    </div>
+                    <div class="location--hospital--links">
+                      <a href="#">Directions and Parking</a>
+                      <a href="#">Getting Around The Hospital</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!--------- MULTI SPECIALTY --------->
+            <div class="tabs--hospital--body">
+              <article class="tabs--card" id="multi-specialty">
+                <h2>Multi-Specialty Centers</h2>
+                <p class="above--h2--text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Rerum illum eum itaque unde, soluta autem.
+                </p>
+                <div class="google--maps">
+                  <iframe
+                    src="https://www.google.com.qa/maps/d/u/0/embed?mid=1RErZ0_BR9AMmYjJbApTYt4OJ0Mz4eVw&ehbc=2E312F"
+                    width="640"
+                    height="480"
+                  ></iframe>
+                </div>
+                <div class="hospital--card">
+                  <div class="hospital--card--left">
+                    <img src="./images/hospitalLoc4.jpg" alt="" />
+                  </div>
+                  <div class="hospital--card--right">
+                    <h3>Agyemang Hospital-Ellicot City</h3>
+                    <div class="address-info">
+                      <h4>Address:</h4>
+                      <p>2345 Ellicot City</p>
+                      <p>Maryland,MD 2349</p>
+                    </div>
+                    <div class="phone--location">
+                      <h4>Phone:</h4>
+                      <p>234-4567-344</p>
+                    </div>
+                    <div class="location--hospital--links">
+                      <a href="#">Directions and Parking</a>
+                      <a href="#">Getting Around The Hospital</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hospital--card">
+                  <div class="hospital--card--left">
+                    <img src="./images/hospitalLoc5.jpg" alt="" />
+                  </div>
+                  <div class="hospital--card--right">
+                    <h3>Agyemang Hospital-Baltimore City</h3>
+                    <div class="address-info">
+                      <h4>Address:</h4>
+                      <p>2345 Baltimore City</p>
+                      <p>Maryland,MD 2349</p>
+                    </div>
+                    <div class="phone--location">
+                      <h4>Phone:</h4>
+                      <p>234-4347-345</p>
+                    </div>
+                    <div class="location--hospital--links">
+                      <a href="#">Directions and Parking</a>
+                      <a href="#">Getting Around The Hospital</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!--------- ADDITIONAL SERVICES --------->
+            <div class="additional--container">
+              <article class="tabs--card" id="additional-services">
+                <h2>Additional Services</h2>
+                <article class="additional">
+                  <h3>Diagnostic Services:</h3>
+                  <p>
+                    Lorem,
+                    <a href="#">Radiology (X-rays, CT scans, MRIs)</a>ipsum
+                    dolor sit amet consectetur adipisicing elit. A adipisci
+                    excepturi iure, nemo aliquid voluptatem temporibus vero
+                    consectetur ea aspernatur quibusdam corporis, non quas.
+                  </p>
+                </article>
+
+                <article class="additional">
+                  <h3>Emergency Services:</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quidem ex, impedit
+                    <a href="#"> Ambulance services </a>a asperiores veniam
+                    quibusdam est illo repellat consectetur, mollitia, molestias
+                    sit nulla! Laudantium, excepturi?
+                  </p>
+                </article>
+
+                <article class="additional">
+                  <h3>Specialty Clinics:</h3>
+                  <p>
+                    <a href="#">Gastroenterology </a>Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Enim inventore dolores eaque
+                    quam officiis mollitia minus eum velit, quo ea.
+                  </p>
+                </article>
+
+                <article class="additional">
+                  <h3>Pharmacy Services:</h3>
+                  <p>
+                    <a href="#">Prescription services </a>Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit. Aliquam laborum
+                    repudiandae aliquid repellat nihil inventore debitis. Rerum
+                    ab id qui eos veritatis, vitae enim iure?
+                  </p>
+                </article>
+
+                <article class="additional">
+                  <h3>Home Health Services:</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Facilis <a href="#">Home health aides </a>quaerat ullam
+                    reprehenderit saepe, fugiat, exercitationem numquam
+                    voluptatibus distinctio magni praesentium eaque voluptatem
+                    molestiae itaque?
+                  </p>
+                </article>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
+      <iframe
+        src="https://www.google.com.qa/maps/d/u/0/embed?mid=1RErZ0_BR9AMmYjJbApTYt4OJ0Mz4eVw&ehbc=2E312F"
+        width="640"
+        height="480"
+      ></iframe>
+    --></section>
+    <!--------- FOOTER --------->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer1">
+          <a href="index.html" class="footer__logo">
+            <img src="./images/health-logo.png" alt="" />
+          </a>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Consequuntur, facilis?
+          </p>
+        </div>
+        <div class="footer__2">
+          <h4>Permalinks</h4>
+          <ul class="Permalinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="health.html">health</a></li>
+            <li><a href="courses.html">Location</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__3">
+          <h4>Privacy</h4>
+          <ul class="privacy">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms And Conditions</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer__4">
+          <h4>Contact Us</h4>
+          <div>
+            <p>+233206178768</p>
+            <p>fatherbernard@yahoo.mail</p>
+          </div>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="uil uil-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="uil uil-instagram-alt"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="uil uil-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!--------- END OF FOOTER --------->
+    <script src="./main.js"></script>
+  </body>
+</html>
