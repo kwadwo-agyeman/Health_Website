@@ -186,13 +186,8 @@ const alertMessage = (text, color) => {
   
     // Show the alert container
     alertMessageContainer.style.opacity = 1;
-    alertMessageContainer.style.height = "auto"; // Set to "auto" to allow content to determine height
-  
-    // Clear the alert after a certain time (e.g., 3 seconds)
-    setTimeout(() => {
-      alertMessageContainer.style.opacity = 0;
-      alertMessageContainer.style.height = 0;
-    }, 3000);
+    alertMessageContainer.style.height = "auto";
+
   };
   
   

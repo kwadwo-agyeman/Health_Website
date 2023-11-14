@@ -103,6 +103,7 @@
   background: palevioletred;
   padding: 3rem ;
   margin: 2rem 0;
+  box-shadow: 1rem 1rem 2rem rgb(0,0,0,0.3);
 }
 .doctor--card--image img {
   width: 180px;
