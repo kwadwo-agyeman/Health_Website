@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/doctors.css">
+    <link rel="stylesheet" href="./styles/doctors.css" />
     <style>
       label {
         display: block;
@@ -138,141 +138,178 @@
     <!----------- SEARCH FOR A DOCTOR------------>
     <div class="container doctor--search--container">
       <h3>Find A Doctor</h3>
-      <form id="search--for--doctor" action="">
-        <label for="physician--name">Physician Name</label>
-        <input
-          type="text"
-          placeholder="Physician Name"
-          id="physician--name"
-          name="physician--name"
-          class="doctor--input search--doctor--input"
-        />
-        <div class="condition--specialty">
-          <div class="condition">
-            <label for="condition">Condition</label>
-            <select class="doctor--input" name="condition" id="condition">
-              <option value="all conditions">All Conditions</option>
-              <option value="abdominal-pain">Abdominal Pain</option>
-              <option value="asthma">Asthma</option>
-              <option value="back-pain">Back Pain</option>
-              <option value="common-cold">Common Cold</option>
-              <option value="diabetes">Diabetes</option>
-              <option value="ear-infection">Ear Infection</option>
-              <option value="flu">Flu</option>
-              <option value="headache">Headache</option>
-              <option value="hypertension">Hypertension</option>
-              <option value="migraine">Migraine</option>
-              <option value="sinusitis">Sinusitis</option>
-              <option value="sprained-ankle">Sprained Ankle</option>
-              <option value="stomach-flu">Stomach Flu</option>
-              <option value="toothache">Toothache</option>
-              <option value="upper-respiratory-infection">
-                Upper Respiratory Infection
-              </option>
-            </select>
-          </div>
-          <div class="specialty">
-            <label for="specialty">Specialty</label>
-            <select class="doctor--input" name="specialty" id="specialty">
-              <option value="acupuncture">Acupuncture</option>
-              <option value="cardiology">Cardiology</option>
-              <option value="dermatology">Dermatology</option>
-              <option value="endocrinology">Endocrinology</option>
-              <option value="gastroenterology">Gastroenterology</option>
-              <option value="hematology">Hematology</option>
-              <option value="neurology">Neurology</option>
-              <option value="oncology">Oncology</option>
-              <option value="ophthalmology">Ophthalmology</option>
-              <option value="orthopedics">Orthopedics</option>
-              <option value="pediatrics">Pediatrics</option>
-              <option value="physical-therapy">Physical Therapy</option>
-              <option value="psychiatry">Psychiatry</option>
-              <option value="radiology">Radiology</option>
-              <option value="rheumatology">Rheumatology</option>
-              <option value="urology">Urology</option>
-              <option value="vascular-surgery">Vascular Surgery</option>
-              <option value="women-s-health">Women's Health</option>
-              <option value="gynecology">Gynecology</option>
-              <option value="allergy-immunology">Allergy & Immunology</option>
-            </select>
-          </div>
+      <label for="physician--name">Physician Name</label>
+      <input
+        type="text"
+        placeholder="Physician Name"
+        id="physician--name"
+        name="physician--name"
+        class="doctor--input search--doctor--input"
+      />
+      <div class="condition--specialty">
+        <div class="condition">
+          <label for="condition">Condition</label>
+          <select class="doctor--input" name="condition" id="condition">
+            <option value="all conditions">All Conditions</option>
+            <option value="abdominal-pain">Abdominal Pain</option>
+            <option value="asthma">Asthma</option>
+            <option value="back-pain">Back Pain</option>
+            <option value="common-cold">Common Cold</option>
+            <option value="diabetes">Diabetes</option>
+            <option value="ear-infection">Ear Infection</option>
+            <option value="flu">Flu</option>
+            <option value="headache">Headache</option>
+            <option value="hypertension">Hypertension</option>
+            <option value="migraine">Migraine</option>
+            <option value="sinusitis">Sinusitis</option>
+            <option value="sprained-ankle">Sprained Ankle</option>
+            <option value="stomach-flu">Stomach Flu</option>
+            <option value="toothache">Toothache</option>
+            <option value="upper-respiratory-infection">
+              Upper Respiratory Infection
+            </option>
+          </select>
         </div>
-        <div class="advanced--container">
-          <div class="advanced--header">
-            <h4>Advanced Filter Option</h4>
-              <h4 class="doc-btn open--advanced">
-                <i class="uil uil-plus"></i>
-              </h4>
-              <h4 class="doc-btn close--advanced">
-                <i class="uil uil-minus"></i>
-              </h4>
-          </div>
-          <!--------- Advanced Container (Hide/Show)----------->
+        <div class="specialty">
+          <label for="specialty">Specialty</label>
+          <select class="doctor--input" name="specialty" id="specialty">
+            <option value="all-specialty">All Specialty</option>
+            <option value="acupuncture">Acupuncture</option>
+            <option value="cardiology">Cardiology</option>
+            <option value="dermatology">Dermatology</option>
+            <option value="endocrinology">Endocrinology</option>
+            <option value="gastroenterology">Gastroenterology</option>
+            <option value="hematology">Hematology</option>
+            <option value="neurology">Neurology</option>
+            <option value="oncology">Oncology</option>
+            <option value="ophthalmology">Ophthalmology</option>
+            <option value="orthopedics">Orthopedics</option>
+            <option value="pediatrics">Pediatrics</option>
+            <option value="physical-therapy">Physical Therapy</option>
+            <option value="psychiatry">Psychiatry</option>
+            <option value="radiology">Radiology</option>
+            <option value="rheumatology">Rheumatology</option>
+            <option value="urology">Urology</option>
+            <option value="vascular-surgery">Vascular Surgery</option>
+            <option value="women-s-health">Women's Health</option>
+            <option value="gynecology">Gynecology</option>
+            <option value="allergy-immunology">Allergy & Immunology</option>
+          </select>
+        </div>
+      </div>
+      <div class="advanced--container">
+        <div class="advanced--header">
+          <h4>Advanced Filter Option</h4>
+          <h4 class="doc-btn open--advanced">
+            <i class="uil uil-plus"></i>
+          </h4>
+          <h4 class="doc-btn close--advanced">
+            <i class="uil uil-minus"></i>
+          </h4>
+        </div>
+        <!--------- Advanced Container (Hide/Show)----------->
 
-          <div class="advanced--hide--show">
-            <div class="for--location--zip">
-              <div class="doctor--location">
-                <label for="doctor--location">Location</label>
-                <select
-                  class="doctor--input"
-                  name="doctor--location"
-                  id="doctor--location"
-                >
-                  <option value="all-locations">All Locations</option>
-                  <option value="ellicot-city">Ellicot City</option>
-                  <option value="baltimore-city">Baltimore City</option>
-                  <option value="columbia">Columbia City</option>
-                </select>
-              </div>
-              <div class="zip--container">
-                <label for="zip">ZIP Code</label>
-                <input
-                  type="text"
-                  placeholder=""
-                  id="zip"
-                  name="zip"
-                  class="doctor--input"
-                />
-              </div>
+        <div class="advanced--hide--show">
+          <div class="for--location--zip">
+            <div class="doctor--location">
+              <label for="doctor--location">Location</label>
+              <select
+                class="doctor--input"
+                name="doctor--location"
+                id="doctor--location"
+              >
+                <option value="all-locations">All Locations</option>
+                <option value="ellicot-city">Ellicot City</option>
+                <option value="baltimore-city">Baltimore City</option>
+                <option value="columbia">Columbia City</option>
+              </select>
             </div>
-            <div class="for--gender--language">
-              <div class="gender">
-                <label for="gender">Gender</label>
-                <select class="doctor--input" name="gender" id="gender">
-                  <option value="all-gender">Gender</option>
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                </select>
-              </div>
-              <div class="languages">
-                <label for="language">Language</label>
-                <select class="doctor--input" name="language" id="language">
-                  <option value="arabic">Arabic</option>
-                  <option value="bengali">Bengali</option>
-                  <option value="chinese">Chinese</option>
-                  <option value="english">English</option>
-                  <option value="french">French</option>
-                  <option value="german">German</option>
-                  <option value="hindi">Hindi</option>
-                  <option value="italian">Italian</option>
-                  <option value="japanese">Japanese</option>
-                  <option value="korean">Korean</option>
-                  <option value="malay">Malay</option>
-                  <option value="portuguese">Portuguese</option>
-                  <option value="russian">Russian</option>
-                  <option value="spanish">Spanish</option>
-                  <option value="swahili">Swahili</option>
-                  <option value="tagalog">Tagalog</option>
-                  <option value="turkish">Turkish</option>
-                  <option value="urdu">Urdu</option>
-                  <option value="vietnamese">Vietnamese</option>
-                </select>
-              </div>
+            <div class="zip--container">
+              <label for="zip">ZIP Code</label>
+              <input
+                type="text"
+                placeholder=""
+                id="zip"
+                name="zip"
+                class="doctor--input"
+              />
+            </div>
+          </div>
+          <div class="for--gender--language">
+            <div class="gender">
+              <label for="gender">Gender</label>
+              <select class="doctor--input" name="gender" id="gender">
+                <option value="all-gender">Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="languages">
+              <label for="language">Language</label>
+              <select class="doctor--input" name="language" id="language">
+                <option value="all-languages">All Languages</option>
+                <option value="arabic">Arabic</option>
+                <option value="bengali">Bengali</option>
+                <option value="chinese">Chinese</option>
+                <option value="english">English</option>
+                <option value="french">French</option>
+                <option value="german">German</option>
+                <option value="hindi">Hindi</option>
+                <option value="italian">Italian</option>
+                <option value="japanese">Japanese</option>
+                <option value="korean">Korean</option>
+                <option value="malay">Malay</option>
+                <option value="portuguese">Portuguese</option>
+                <option value="russian">Russian</option>
+                <option value="spanish">Spanish</option>
+                <option value="swahili">Swahili</option>
+                <option value="tagalog">Tagalog</option>
+                <option value="turkish">Turkish</option>
+                <option value="urdu">Urdu</option>
+                <option value="vietnamese">Vietnamese</option>
+              </select>
             </div>
           </div>
         </div>
-        <h4 class="submit--doctor">Search <i class="uil uil-search"></i></h4>
-      </form>
+      </div>
+      <h4 class="submit--doctor">Search <i class="uil uil-search"></i></h4>
+      <div class="alert--number--doctor">
+        <h3 id="alert--number--doctor"></h3>
+      </div>
+      <div class="doctors--card--container">
+        <!--
+        <article class="doctor--card">
+          <div class="doctor--card--image">
+            <img src="./images/doc3f.jpg" alt="" />
+          </div>
+
+          <div class="doctor--card-detail">
+            <div class="doctor--detail--head">
+              <h3>Lois agyemang</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem,
+                reprehenderit!
+              </p>
+            </div>
+
+            <div class="doctor--detail--body">
+              <h4>Specialty</h4>
+              <p>gastro</p>
+            </div>
+
+            <div class="doctor--detail--bottom">
+                <h4>Location</h4>
+                <p>baltimore-city</p>
+            </div>
+          </div>
+
+          <a href="#" class="doctor--card--profile">
+            <h5>View Profile</h5>
+            <i class="uil uil-arrow-up-right"></i>
+          </a>
+        </article>
+    -->
+      </div>
     </div>
 
     <!--------- FOOTER --------->
@@ -328,6 +365,7 @@
       </div>
     </footer>
     <!--------- END OF FOOTER --------->
+    <script src="./doctors.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>

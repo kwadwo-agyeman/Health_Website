@@ -1,84 +1,83 @@
 /* ================================ DOCTORS ================================== */
 .doctor--search--container {
-    background-color: rgb(250, 197, 205);
-    margin-top: 15rem;
-    padding: 2rem 2rem 4rem;
-  }
-  .doctor--search--container h3 {
-    margin-bottom: 2rem;
-    font-weight: 600;
-    text-align: start;
-    color: var(--color-light-black);
-  }
-  .search--doctor--input {
-    width: 100%;
-  }
-  .condition--specialty {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin-top: 3rem;
-  }
-  #condition,
-  #doctor--location,
-  #specialty,
-  #language,
-  #zip,
-  #gender {
-    width: 100%;
-  }
-  .doctor--input {
-    height: 3rem;
-    font-size: 1rem;
-    padding: 0 2rem;
-  }
-  .advanced--container {
-    margin-top: 3rem;
-  }
-  .advanced--container h4 {
-    font-weight: 600;
-  }
-  .open--advanced {
-    background: transparent;
-    cursor: pointer;
-    font-size: 1.5rem;
-  
-  }
-  .close--advanced {
-    background: transparent;
-    cursor: pointer;
-    font-size: 1.5rem;
-    display: none;
-  }
-  .for--location--zip {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
-  .for--gender--language {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin-top: 3rem;
-  }
-  .advanced--hide--show{
-    border-top: 2px solid rgb(236, 133, 167);
-    padding-top: 3rem;
-    display: none;
-  }
-  .show--advanced{
-    display: block;
-  }
-  .advanced--header{
-    padding-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  .advanced--header h4{
-    color: red;
-  }
-  .submit--doctor{
+  background-color: rgb(250, 197, 205);
+  margin-top: 15rem;
+  padding: 2rem 2rem 4rem;
+}
+.doctor--search--container h3 {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  text-align: start;
+  color: var(--color-light-black);
+}
+.search--doctor--input {
+  width: 100%;
+}
+.condition--specialty {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+#condition,
+#doctor--location,
+#specialty,
+#language,
+#zip,
+#gender {
+  width: 100%;
+}
+.doctor--input {
+  height: 3rem;
+  font-size: 1rem;
+  padding: 0 2rem;
+}
+.advanced--container {
+  margin-top: 3rem;
+}
+.advanced--container h4 {
+  font-weight: 600;
+}
+.open--advanced {
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.close--advanced {
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+.for--location--zip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.for--gender--language {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.advanced--hide--show {
+  border-top: 2px solid rgb(236, 133, 167);
+  padding-top: 3rem;
+  display: none;
+}
+.show--advanced {
+  display: block;
+}
+.advanced--header {
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.advanced--header h4 {
+  color: red;
+}
+.submit--doctor {
   padding: 0.5rem;
   background: palevioletred;
   width: fit-content;
@@ -86,24 +85,100 @@
   color: white;
   margin-top: 2rem;
   font-weight: 600;
+}
+.submit--doctor:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 1rem 0rem 10rem rgb(236, 97, 81);
+}
+/************ DOCTOR CARD ************/
+.doctors--card--container {
+  margin-top: 4rem;
+  color: white;
+}
+.doctor--card {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  gap: 4rem;
+  background: palevioletred;
+  padding: 3rem ;
+  margin: 2rem 0;
+}
+.doctor--card--image img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-top: 0.5rem;
+}
+.doctor--card--detail {
+ /* display: flex;
+  flex-direction: column;
+  gap: 2rem;*/
+}
+.doctor--detail--bottom{
+  margin-top: 1rem;
+}
+.doctor--detail--bottom p{
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.doctor--detail--head p{
+  margin-top: -2rem;
+  font-weight: 500;
+}
+.doctor--detail--head h3{
+color: white;
+text-transform: capitalize;
+}
+.doctor--detail--body{
+  margin-top: 1rem;
+}
+.doctor--detail--body p{
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.doctor--card--profile {
+  display: flex;
+  align-items: center;
+  margin-top: -11rem;
+  margin-left: -3rem;
+}
+.doctor--card--profile h5 {
+  transition: var(--transition);
+  cursor: pointer;
+}
+.doctor--card--profile h5:hover {
+  padding-right: 8px;
+}
+.alert--number--doctor{
+  height: 3rem;
+  display: none;
+  margin-top: 3rem;
+  border-radius: 8px;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+#alert--number--doctor{
+color: white;
+font-weight: 500;
+margin-left: 2rem;
+margin-top: 1.4rem;
+}
+/************ ======== PHONES ======== *************/
+@media screen and (max-width: 600px) {
+  .doctor--search--container {
+    margin-top: 8rem;
   }
-  .submit--doctor:hover{
-    cursor: pointer;
-    transform: translateY(-2px);
-    box-shadow: 1rem 0rem 10rem rgb(236, 97, 81);
+  .for--gender--language {
+    grid-template-columns: 1fr;
   }
-  /************ PHONES *************/
-  @media screen and (max-width: 600px){
-    .doctor--search--container{
-      margin-top: 8rem;
-    }
-    .for--gender--language{
-      grid-template-columns: 1fr;
-    }
-    .for--location--zip{
-      grid-template-columns: 1fr;
-    }
-    .condition--specialty{
-      grid-template-columns: 1fr;
-    }
+  .for--location--zip {
+    grid-template-columns: 1fr;
   }
+  .condition--specialty {
+    grid-template-columns: 1fr;
+  }
+}

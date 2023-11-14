@@ -1,4 +1,3 @@
-
 // show nav-details eg. For Patients and Visitor
 const navFilters = document.querySelectorAll(".nav--filter");
 const navDetailCards = document.querySelectorAll(".detail-card");
@@ -85,22 +84,5 @@ tabFilters.forEach((tabFilter) => {
     ActiveLocationCard.classList.add("active");
   });
 });
-/* ***************** FIND A DOCTOR ********************** */
-/* **************** TOGGLE ADVANCED OPTIONS ******************* */
 
-const advancedContainer = document.querySelector(".advanced--hide--show");
-const openAdvance = document.querySelector(".open--advanced");
-const closeAdvance = document.querySelector(".close--advanced");
-
-openAdvance.addEventListener("click", () => {
-  advancedContainer.classList.add("show--advanced");
-  openAdvance.style.display = "none";
-  closeAdvance.style.display = "inline-block";
-});
-
-closeAdvance.addEventListener("click", () => {
-  advancedContainer.classList.remove("show--advanced");
-  openAdvance.style.display = "block";
-  closeAdvance.style.display = "none";
-});
 
