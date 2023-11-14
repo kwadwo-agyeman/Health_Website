@@ -74,13 +74,33 @@ tabFilters.forEach((tabFilter) => {
     tabFilters.forEach((tabFilter) => {
       tabFilter.classList.remove("active");
     });
-    e.currentTarget.classList.add("active")
+    e.currentTarget.classList.add("active");
 
-    tabCards.forEach((tabCard)=>{
-      tabCard.classList.remove("active")
-    })
+    tabCards.forEach((tabCard) => {
+      tabCard.classList.remove("active");
+    });
 
-    const ActiveLocationCard = document.getElementById(Id)
-    ActiveLocationCard.classList.add("active")
+    const ActiveLocationCard = document.getElementById(Id);
+    ActiveLocationCard.classList.add("active");
   });
+});
+/* ***************** FIND A DOCTOR ********************** */
+/* **************** TOGGLE ADVANCED OPTIONS ******************* */
+
+const advancedContainer = document.querySelector(".advanced--hide--show");
+const closeAdvance = document.querySelector(".close--advanced");
+const openAdvance = document.querySelector(".open--advanced");
+
+openAdvance.addEventListener("click", () => {
+  if (!advancedContainer.classList.contains("show--advanced")) {
+    advancedContainer.classList.add("show--advanced");
+  }
+  openAdvance.style.display = "none";
+  closeAdvance.style.display = "inline-block";
+});
+
+closeAdvance.addEventListener("click", () => {
+  advancedContainer.classList.remove("show--advanced");
+  openAdvance.style.display = "block";
+  closeAdvance.style.display = "none";
 });
