@@ -1395,6 +1395,7 @@ article.active {
   margin-bottom: 2rem;
   font-weight: 600;
   text-align: start;
+  color: var(--color-light-black);
 }
 .search--doctor--input {
   width: 100%;
@@ -1463,4 +1464,33 @@ article.active {
 }
 .advanced--header h4{
   color: red;
+}
+.submit--doctor{
+padding: 0.5rem;
+background: palevioletred;
+width: fit-content;
+border-radius: 5px;
+color: white;
+margin-top: 2rem;
+font-weight: 600;
+}
+.submit--doctor:hover{
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 1rem 0rem 10rem rgb(236, 97, 81);
+}
+/************ PHONES *************/
+@media screen and (max-width: 600px){
+  .doctor--search--container{
+    margin-top: 8rem;
+  }
+  .for--gender--language{
+    grid-template-columns: 1fr;
+  }
+  .for--location--zip{
+    grid-template-columns: 1fr;
+  }
+  .condition--specialty{
+    grid-template-columns: 1fr;
+  }
 }

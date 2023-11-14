@@ -1,3 +1,4 @@
+
 // show nav-details eg. For Patients and Visitor
 const navFilters = document.querySelectorAll(".nav--filter");
 const navDetailCards = document.querySelectorAll(".detail-card");
@@ -92,9 +93,7 @@ const closeAdvance = document.querySelector(".close--advanced");
 const openAdvance = document.querySelector(".open--advanced");
 
 openAdvance.addEventListener("click", () => {
-  if (!advancedContainer.classList.contains("show--advanced")) {
-    advancedContainer.classList.add("show--advanced");
-  }
+  advancedContainer.classList.add("show--advanced");
   openAdvance.style.display = "none";
   closeAdvance.style.display = "inline-block";
 });
@@ -104,3 +103,4 @@ closeAdvance.addEventListener("click", () => {
   openAdvance.style.display = "block";
   closeAdvance.style.display = "none";
 });
+
