@@ -89,8 +89,8 @@ tabFilters.forEach((tabFilter) => {
 /* **************** TOGGLE ADVANCED OPTIONS ******************* */
 
 const advancedContainer = document.querySelector(".advanced--hide--show");
-const closeAdvance = document.querySelector(".close--advanced");
 const openAdvance = document.querySelector(".open--advanced");
+const closeAdvance = document.querySelector(".close--advanced");
 
 openAdvance.addEventListener("click", () => {
   advancedContainer.classList.add("show--advanced");

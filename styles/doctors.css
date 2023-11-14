@@ -1,0 +1,109 @@
+/* ================================ DOCTORS ================================== */
+.doctor--search--container {
+    background-color: rgb(250, 197, 205);
+    margin-top: 15rem;
+    padding: 2rem 2rem 4rem;
+  }
+  .doctor--search--container h3 {
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-align: start;
+    color: var(--color-light-black);
+  }
+  .search--doctor--input {
+    width: 100%;
+  }
+  .condition--specialty {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  #condition,
+  #doctor--location,
+  #specialty,
+  #language,
+  #zip,
+  #gender {
+    width: 100%;
+  }
+  .doctor--input {
+    height: 3rem;
+    font-size: 1rem;
+    padding: 0 2rem;
+  }
+  .advanced--container {
+    margin-top: 3rem;
+  }
+  .advanced--container h4 {
+    font-weight: 600;
+  }
+  .open--advanced {
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.5rem;
+  
+  }
+  .close--advanced {
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+  }
+  .for--location--zip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .for--gender--language {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .advanced--hide--show{
+    border-top: 2px solid rgb(236, 133, 167);
+    padding-top: 3rem;
+    display: none;
+  }
+  .show--advanced{
+    display: block;
+  }
+  .advanced--header{
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .advanced--header h4{
+    color: red;
+  }
+  .submit--doctor{
+  padding: 0.5rem;
+  background: palevioletred;
+  width: fit-content;
+  border-radius: 5px;
+  color: white;
+  margin-top: 2rem;
+  font-weight: 600;
+  }
+  .submit--doctor:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 1rem 0rem 10rem rgb(236, 97, 81);
+  }
+  /************ PHONES *************/
+  @media screen and (max-width: 600px){
+    .doctor--search--container{
+      margin-top: 8rem;
+    }
+    .for--gender--language{
+      grid-template-columns: 1fr;
+    }
+    .for--location--zip{
+      grid-template-columns: 1fr;
+    }
+    .condition--specialty{
+      grid-template-columns: 1fr;
+    }
+  }

@@ -1,0 +1,261 @@
+/***************** LOCATIONS ******************/
+.locations {
+    margin-top: 12rem;
+  }
+  /******** LOCATION HEAD *********/
+  .location--head {
+    border-bottom: 2px solid var(--color-light);
+    height: 55vh;
+  }
+  .location--head h2 {
+    text-align: start;
+    font-weight: 500;
+  }
+  .location--head p {
+    margin-top: 1rem;
+    margin-left: 12px;
+    padding: 0 5px;
+    color: red;
+  }
+  .emergency {
+    background: rgb(255, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  .location--input {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 4rem;
+    border: 2px solid var(--color-bg1);
+    border-radius: 10px;
+  }
+  .find input {
+    border-right: 2px solid var(--color-bg1);
+    padding: 0 1rem;
+    font-size: 1rem;
+    margin: 5px;
+    height: 3rem;
+    width: 100%;
+  }
+  .near--me {
+    display: grid;
+    grid-template-columns: 85% 15%;
+  }
+  .near--me input {
+    height: 3rem;
+    margin: 5px;
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+  .search--logo--near {
+    margin-left: 1.3rem;
+    padding-left: 1rem;
+    background: #6cb4ee;
+    color: var(--color-white);
+  }
+  .search--logo--near i.uil-search {
+    bottom: 2rem;
+    font-size: 2rem;
+  }
+  /********* TABS ***********/
+  .tabs--header {
+    margin-top: 2rem;
+  }
+  .tabs--header h2 {
+    text-align: start;
+    font-weight: 500;
+  }
+  .tabs--header p {
+    margin-left: 10px;
+  }
+  .tabs--card {
+    display: none;
+  }
+  article.active {
+    display: block;
+  }
+  
+  .tabs--filters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 3rem;
+  }
+  .tab--filter:nth-child(1) {
+    border-top-left-radius: 10px;
+  }
+  .tab--filter:nth-child(3) {
+    border-top-right-radius: 10px;
+  }
+  .tab--filter {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  .tab--filter.active {
+    background: var(--color-bg1);
+    color: var(--color-white);
+  }
+  .tab--filter:not(.active):hover {
+    background: #89cff0;
+    color: var(--color-white);
+  }
+  .tabs--container {
+    display: grid;
+    grid-template-rows: 20 80;
+  }
+  /************** HOSPITAL CARD **************/
+  .tabs--card h2 {
+    font-weight: 500;
+    text-align: start;
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+  .above--h2--text {
+    margin-left: 2rem;
+  }
+  
+  .google--maps {
+    padding-left: 2rem;
+    margin-top: 2rem;
+  }
+  .hospital--card {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 0 2rem;
+  }
+  .hospital--card--right h3 {
+    margin-left: -4rem;
+    font-weight: 400;
+  }
+  .hospital--card--left img {
+    border: 4px solid white;
+  }
+  .tabs--body {
+    background: rgb(252, 250, 250);
+    padding-bottom: 6rem;
+  }
+  .address-info {
+    margin-top: 2rem;
+  }
+  .address-info h4 {
+    font-weight: 500;
+  }
+  .phone--location {
+    margin-top: 1.5rem;
+  }
+  .phone--location h4 {
+    font-weight: 500;
+  }
+  .location--hospital--links {
+    margin-top: 2rem;
+  }
+  .location--hospital--links a {
+    color: #007fff;
+    font-size: 1rem;
+  }
+  .location--hospital--links :nth-child(1) {
+    border-right: 2px solid var(--color-primary);
+    padding-right: 1rem;
+  }
+  /********* ADDITIONAL SERVICES *********/
+  .additional--container {
+    margin: 0 3rem;
+  }
+  .additional--container .tabs--card h2 {
+    margin-left: -1rem;
+  }
+  .additional h3 {
+    text-align: start;
+    font-weight: 500;
+    margin-top: 2.5rem;
+  }
+  .additional p a {
+    color: var(--color-primary);
+  }
+  .additional p a:hover {
+    text-decoration: underline;
+  }
+  #sam {
+    border: 2px solid black;
+  }
+  /*************** LOCATION TABLETS *******************/
+  @media screen and (max-width: 1024px) {
+    .container {
+      width: var(--container-width-md);
+    }
+    .location--head {
+      height: 40vh;
+    }
+    .search--logo--near {
+      margin-left: 0rem;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .container {
+      width: var(--container-width-sm);
+    }
+    /******** LOCATION HEADER **********/
+    .locations {
+      margin-top: 7rem;
+    }
+    .location--input {
+      grid-template-columns: 1fr;
+    }
+    .location--head {
+      padding-bottom: 8rem;
+      height: 45vh;
+    }
+    .location--head h2 {
+      text-align: center;
+    }
+    .find {
+      border-bottom: 2px solid var(--color-bg1);
+    }
+    .find input {
+      border-right: none;
+    }
+    /******** TABS *********/
+    .tabs--header {
+      margin-top: 6rem;
+    }
+    .tabs--filters {
+      grid-template-columns: 1fr;
+    }
+    .google--maps {
+      margin-left: -1rem;
+    }
+    iframe {
+      width: 100%;
+    }
+    .hospital--card {
+      grid-template-columns: 1fr;
+    }
+    .hospital--card--right h3 {
+      margin-left: 1rem;
+    }
+    .address-info {
+      text-align: center;
+    }
+    .phone--location {
+      text-align: center;
+    }
+    .location--hospital--links {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+    .location--hospital--links :nth-child(1) {
+      border-right: none;
+    }
+    .tab--filter:nth-child(1) {
+      border-top-right-radius: 10px;
+    }
+    .hospital--card {
+      border-top: 1px solid var(--color-light-black);
+      border-bottom: 1px solid var(--color-light-black);
+      padding: 4rem 0;
+    }
+  }
+  
