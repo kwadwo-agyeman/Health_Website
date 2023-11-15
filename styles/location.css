@@ -252,6 +252,9 @@
     .tab--filter:nth-child(1) {
       border-top-right-radius: 10px;
     }
+    .tab--filter:nth-child(3){
+      border-top-right-radius: none;
+    }
     .hospital--card {
       border-top: 1px solid var(--color-light-black);
       border-bottom: 1px solid var(--color-light-black);

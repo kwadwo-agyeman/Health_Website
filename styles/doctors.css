@@ -104,12 +104,14 @@
   padding: 3rem ;
   margin: 2rem 0;
   box-shadow: 1rem 1rem 2rem rgb(0,0,0,0.3);
+  transition: var(--transition);
 }
 .doctor--card--image img {
   width: 180px;
   height: 180px;
   border-radius: 50%;
   margin-top: 0.5rem;
+  border: 1.5rem solid plum;
 }
 .doctor--card--detail {
  /* display: flex;
@@ -170,6 +172,15 @@ margin-top: 1.4rem;
 }
 /************ ======== PHONES ======== *************/
 @media screen and (max-width: 600px) {
+  .container{
+    width: var(--container-sm)
+  }
+  h4{
+    font-size: 1.3rem;
+  }
+  h3{
+    font-size: 1.6rem;
+  }
   .doctor--search--container {
     margin-top: 8rem;
   }
@@ -181,5 +192,30 @@ margin-top: 1.4rem;
   }
   .condition--specialty {
     grid-template-columns: 1fr;
+  }
+  .doctor--card{
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 2rem;
+  }
+  .doctor--card--profile{
+    margin-bottom: -10rem;
+  }
+  .doctor--detail--body,
+  .doctor--detail--bottom,
+  .doctor--detail--head,
+  .doctor--detail--head h3
+  {
+    text-align: center;
+  }
+  .doctor--detail--head h3{
+    text-decoration: underline;
+    margin-top: 2rem;
+  }
+  .doctor--card--profile{
+    margin: 0 auto;
+  }
+  .submit--doctor{
+    margin: 2rem auto;
   }
 }
